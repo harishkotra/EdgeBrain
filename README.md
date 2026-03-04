@@ -83,7 +83,7 @@ The Local AI Mission Console is designed as a foundation. Here are ways you can 
 - **Local RAG Integration**: Instead of just describing the scene, pass the description to a local ChromaDB instance to retrieve context before generating the speech.
 
 ## 🛠️ Built With
-- **[RunAnywhere Web SDK](https://github.com/runanywhere)**: Standardized APIs for bridging WASM AI, Audio/Video capture, and device capabilities.
+- **[RunAnywhere Web SDK][https://github.com/RunanywhereAI/runanywhere-sdks/tree/main/sdk/runanywhere-web](https://github.com/RunanywhereAI/runanywhere-sdks/tree/main/sdk/runanywhere-web)**: Standardized APIs for bridging WASM AI, Audio/Video capture, and device capabilities.
 - **[Ollama](https://ollama.com/)**: Local LLM/VLM inference engine.
 - **[Vite](https://vitejs.dev/) & TypeScript**: Fast, typed frontend tooling.
 - **[Piper/Sherpa-ONNX](https://github.com/k2-fsa/sherpa-onnx)**: Blazing fast offline Text-to-Speech.
