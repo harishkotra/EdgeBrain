@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI Mission Console</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/coi-serviceworker.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Local AI Mission Console</h1>
+            <p class="tagline">Your browser becomes a private AI computer.</p>
+            <div class="model-selection">
+                <label for="model-select">Reasoning Model:</label>
+                <select id="model-select" disabled>
+                    <option value="">Checking models...</option>
+                </select>
+            </div>
+            <div id="ollama-status" class="status-badge checking">Checking Ollama...</div>
+        </header>
+
+        <main>
+            <section class="camera-container">
+                <div class="video-wrapper">
+                    <video id="camera-feed" autoplay playsinline></video>
+                    <img id="captured-frame" />
+                    <div class="overlay-info" id="status-overlay">Initializing AI...</div>
+                </div>
+                <div class="action-buttons">
+                    <button id="analyze-btn" disabled>Analyze Scene</button>
+                    <button id="reset-btn" style="display: none;">Retake</button>
+                </div>
+            </section>
+
+            <section class="output-container">
+                <div class="card" id="vision-card">
+                    <h3>Vision Result</h3>
+                    <p id="vision-output" class="placeholder">Awaiting input...</p>
+                </div>
+
+                <div class="card" id="ollama-card">
+                    <h3>Ollama Reasoning</h3>
+                    <p id="ollama-output" class="placeholder">Awaiting reasoning...</p>
+                </div>
+
+                <div class="card" id="voice-card">
+                    <h3>Voice Output</h3>
+                    <p id="voice-status" class="placeholder">Ready for speech</p>
+                    <div id="audio-visualizer"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="log-console"></div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
