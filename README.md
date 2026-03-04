@@ -4,6 +4,12 @@
 
 The Local AI Mission Console is a minimal, elegant, and powerful demonstration of local Edge AI. It bridges the gap between browser-side execution (using the **RunAnywhere Web SDK**) and local backend inference (using **Ollama**), creating a fully private, multimodal AI pipeline.
 
+[Video Demo](https://youtu.be/okRPaIvrjwQ)
+
+<img width="1425" height="972" alt="Screenshot at Mar 04 20-24-28" src="https://github.com/user-attachments/assets/90e804dc-6b44-4187-aab6-e77efefb89c4" />
+<img width="1479" height="1026" alt="Screenshot at Mar 04 20-03-49" src="https://github.com/user-attachments/assets/3b310749-53c2-4b3c-8c60-d7969e61e059" />
+<img width="1485" height="1024" alt="Screenshot at Mar 04 20-11-17" src="https://github.com/user-attachments/assets/8f930638-af21-46a3-afbf-1c0783dbe2bc" />
+
 ## 🌟 The Vision
 
 Traditional AI applications send your voice, text, and images to centralized servers. The Local AI Mission Console flips this model: **it brings the AI directly to your hardware.**
